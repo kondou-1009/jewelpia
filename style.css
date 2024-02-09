@@ -1,0 +1,462 @@
+@charset "utf-8";
+
+/* ========================================
+    リセットcss
+========================================= */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+/* table, */
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+html {
+  overflow-y: scroll;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,
+th {
+  text-align: left;
+}
+a:focus {
+  outline: none;
+}
+
+/* ========================================
+	フロートの解除
+========================================= */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* ========================================
+	全体設計
+========================================= */
+body {
+  color: #000;
+  font-size: 14px;
+  line-height: 1;
+  font-family: "メイリオ", Meiryo;
+  background-color: #7cc9f3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: auto;
+}
+table{border-color: blue;}
+/* ========================================
+    ラッパー
+========================================= */
+div#wrapper {
+  width: 960px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* ========================================
+    ヘッダー
+========================================= */
+header {
+  width: 960px;
+  height: 99px;
+}
+
+header h1 {
+  width: 213px;
+  height: 39px;
+  margin-top: 30px;
+  float: left;
+}
+
+nav {
+  float: right;
+  margin-top: 56px;
+}
+
+nav ul li {
+  float: left;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #555555;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* ========================================
+    メイン画像
+========================================= */
+div#mainimage {
+  width: 960px;
+  height: 300px;
+  margin-bottom: 30px;
+  box-shadow: 10px 10px 4px #005f77 ;
+
+}
+
+/* ジュエルピア説明 */
+
+div#top {
+  margin: 20px 0 20px 0;
+}
+div#top p#aisatu{text-shadow: 3px 3px 3px#555555}
+p#aisatu {
+  font-family: "Cherry Bomb One", system-ui;
+  font-size: 5rem;
+  color: aliceblue;
+  margin-bottom: 10px;
+}
+
+p {
+  padding: 0.5%;
+}
+
+
+/* ========================================
+    レフト
+========================================= */
+div#left {
+  width: 280px;
+  height: auto;
+  float: left;
+  margin-right: 30px;
+}
+
+div#left ul li a {
+  text-decoration: none;
+}
+
+div#left ul li a img{
+  border-radius: 50%;
+  box-shadow: 5px 5px 3px #555555;
+}
+
+div#left ul li a#icon_blog {
+  margin-left: 150px;
+  margin-top: -50px;
+}
+
+div#left ul li a#icon_acsess {
+  margin-top: -50px;
+}
+
+/* ========================================
+    ライト
+========================================= */
+div#right {
+  width: 650px;
+  height: auto;
+  float: left;
+}
+
+div#right h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+div#right dt {
+  font-size: 12px;
+  color: #000;
+  float: left;
+  width: 79px;
+  line-height: 40px;
+  padding-left: 15px;
+}
+
+div#right  dd {
+  font-size: 13px;
+  color: #000;
+  float: left;
+  width: 556px;
+  line-height: 40px;
+}
+#right dd a{
+color: #000;}
+
+div#right dt:nth-of-type(odd),
+div#right dd:nth-of-type(odd) {
+  background-color: #f5f5f5;
+}
+
+div.clearfix {
+  clear: both;
+}
+
+/* ========================================
+    フッター
+========================================= */
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #63abd4;
+  margin-top: 50px;
+  margin-bottom: 0px;
+ 
+}
+
+div#footer_inner {
+  width: 960px;
+  margin: 0 auto;
+  padding: 50px 0; 
+  position: relative;
+}
+
+div #gedan {
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+div.nakami p {
+  float: right;
+  text-align: center;
+}
+
+div p.footer_logo {
+  float: left;
+}
+
+
+p#anago a {
+  width: 78px;
+  height: 20px;
+  display: block;
+  position: absolute;
+ margin-top: -140px;
+ margin-left: 30px;
+}
+
+/* アクセスページ */
+
+div.oya {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+div.kodomo h1 {
+  margin: 50% 10%;
+}
+
+/* 料金表 */
+
+div#ryoukin {
+  font-size: 2rem;
+}
+h2 {
+  font-weight: bold;
+}
+h2 .dai {
+  font-weight: normal;
+}
+
+div#ryoukin span {
+  font-size: 70%;
+}
+
+div #ryoukin table {
+  margin-top: 30px;
+}
+
+div #ryoukin table th,
+td {
+  text-align: center;
+  padding: 5px 20px;
+}
+
+/* レストラン・ショップ */
+
+aside{margin: 30px 0px;}
+
+
+div.kaimono{
+  line-height: 1.3rem;
+  text-align: center;
+}
+p.hutoji {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+div#yokohaba{width: 100%;
+display: grid;
+gap: 25px;
+grid-template-columns: 1fr 1fr;
+}
+
+
+/* ショー案内 */
+p.syou{font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#syou .ooki{font-size: 1.2rem;}
+#syou span{font-size: 0.7rem;}
+#syou p{margin-bottom: 5px;}
+p.hutoji{font-weight: bold;}
+
+/* 暮らし紹介 */
+.kurasi{margin: 10px 0px;
+line-height: 1.3rem;}
+
+main#kiji div.kurasi{background-color: aquamarine;
+border-radius: 20%;
+text-align: center;
+padding:3%;
+}
+div.kurasi img{border-radius: 25%;
+  text-align: center;
+margin-right: 25px;}
+
+
+
+
+main#kiji{display: flex;
+justify-content: space-between;}
+div#hako{width: 60%;}
+
+main#kiji article#douga{width: 40%;
+}
+
+/* フォーム */
+textarea{width: 100%;
+max-width: 480px;
+height: 6rem;}
+
+label{font-size: 1.125rem;
+margin-bottom: 10px;
+display: block;}
+
+form div{margin-bottom: 10px;}
+
+.toi{font-family: 1.2rem;
+text-align: center;
+font-weight: bold;}
